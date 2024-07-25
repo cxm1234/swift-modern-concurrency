@@ -1,0 +1,425 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		3A24DAEB2C5230FA00AE52B9 /* ListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A24DAEA2C5230FA00AE52B9 /* ListView.swift */; };
+		3A24DAEF2C52323F00AE52B9 /* SuperStorageModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A24DAEE2C52323F00AE52B9 /* SuperStorageModel.swift */; };
+		3A24DAF12C52327300AE52B9 /* DownloadView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A24DAF02C52327300AE52B9 /* DownloadView.swift */; };
+		3A24DAF32C52330100AE52B9 /* DataModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A24DAF22C52330100AE52B9 /* DataModels.swift */; };
+		3A24DAF52C52343C00AE52B9 /* FileDetails.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A24DAF42C52343C00AE52B9 /* FileDetails.swift */; };
+		3A24DAF72C52366700AE52B9 /* Utility.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A24DAF62C52366700AE52B9 /* Utility.swift */; };
+		3A24DAFB2C5237EF00AE52B9 /* LICENSE in Resources */ = {isa = PBXBuildFile; fileRef = 3A24DAF82C5237EF00AE52B9 /* LICENSE */; };
+		3A24DAFC2C5237EF00AE52B9 /* SerreriaSobria.otf in Resources */ = {isa = PBXBuildFile; fileRef = 3A24DAF92C5237EF00AE52B9 /* SerreriaSobria.otf */; };
+		3A24DB012C523B2800AE52B9 /* Downloads.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A24DB002C523B2800AE52B9 /* Downloads.swift */; };
+		3A24DB032C523BA900AE52B9 /* FilePreview.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A24DB022C523BA900AE52B9 /* FilePreview.swift */; };
+		3A24DB052C523E0F00AE52B9 /* FileListItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A24DB042C523E0F00AE52B9 /* FileListItem.swift */; };
+		3AB36B162C522ECC00DB3CFF /* SuperStorage_MikeApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AB36B152C522ECC00DB3CFF /* SuperStorage_MikeApp.swift */; };
+		3AB36B182C522ECC00DB3CFF /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AB36B172C522ECC00DB3CFF /* ContentView.swift */; };
+		3AB36B1A2C522ECD00DB3CFF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3AB36B192C522ECD00DB3CFF /* Assets.xcassets */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		3A24DAEA2C5230FA00AE52B9 /* ListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListView.swift; sourceTree = "<group>"; };
+		3A24DAEE2C52323F00AE52B9 /* SuperStorageModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SuperStorageModel.swift; sourceTree = "<group>"; };
+		3A24DAF02C52327300AE52B9 /* DownloadView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DownloadView.swift; sourceTree = "<group>"; };
+		3A24DAF22C52330100AE52B9 /* DataModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataModels.swift; sourceTree = "<group>"; };
+		3A24DAF42C52343C00AE52B9 /* FileDetails.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FileDetails.swift; sourceTree = "<group>"; };
+		3A24DAF62C52366700AE52B9 /* Utility.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Utility.swift; sourceTree = "<group>"; };
+		3A24DAF82C5237EF00AE52B9 /* LICENSE */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
+		3A24DAF92C5237EF00AE52B9 /* SerreriaSobria.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = SerreriaSobria.otf; sourceTree = "<group>"; };
+		3A24DAFF2C52390900AE52B9 /* SuperStorage-Mike-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "SuperStorage-Mike-Info.plist"; sourceTree = SOURCE_ROOT; };
+		3A24DB002C523B2800AE52B9 /* Downloads.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Downloads.swift; sourceTree = "<group>"; };
+		3A24DB022C523BA900AE52B9 /* FilePreview.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilePreview.swift; sourceTree = "<group>"; };
+		3A24DB042C523E0F00AE52B9 /* FileListItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FileListItem.swift; sourceTree = "<group>"; };
+		3AB36B122C522ECC00DB3CFF /* SuperStorage_Mike.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SuperStorage_Mike.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		3AB36B152C522ECC00DB3CFF /* SuperStorage_MikeApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SuperStorage_MikeApp.swift; sourceTree = "<group>"; };
+		3AB36B172C522ECC00DB3CFF /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		3AB36B192C522ECD00DB3CFF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		3AB36B0F2C522ECC00DB3CFF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		3A24DAE92C5230D900AE52B9 /* Assets */ = {
+			isa = PBXGroup;
+			children = (
+				3A24DAFA2C5237EF00AE52B9 /* Fonts */,
+				3AB36B192C522ECD00DB3CFF /* Assets.xcassets */,
+			);
+			path = Assets;
+			sourceTree = "<group>";
+		};
+		3A24DAEC2C5231B900AE52B9 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				3A24DAF42C52343C00AE52B9 /* FileDetails.swift */,
+				3A24DB002C523B2800AE52B9 /* Downloads.swift */,
+				3A24DB022C523BA900AE52B9 /* FilePreview.swift */,
+				3A24DB042C523E0F00AE52B9 /* FileListItem.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		3A24DAED2C5231EB00AE52B9 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				3A24DAEE2C52323F00AE52B9 /* SuperStorageModel.swift */,
+				3A24DAF22C52330100AE52B9 /* DataModels.swift */,
+				3A24DAF62C52366700AE52B9 /* Utility.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		3A24DAFA2C5237EF00AE52B9 /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				3A24DAF82C5237EF00AE52B9 /* LICENSE */,
+				3A24DAF92C5237EF00AE52B9 /* SerreriaSobria.otf */,
+			);
+			path = Fonts;
+			sourceTree = "<group>";
+		};
+		3A24DB062C5240D200AE52B9 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		3AB36B092C522ECC00DB3CFF = {
+			isa = PBXGroup;
+			children = (
+				3AB36B142C522ECC00DB3CFF /* SuperStorage_Mike */,
+				3AB36B132C522ECC00DB3CFF /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		3AB36B132C522ECC00DB3CFF /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				3AB36B122C522ECC00DB3CFF /* SuperStorage_Mike.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		3AB36B142C522ECC00DB3CFF /* SuperStorage_Mike */ = {
+			isa = PBXGroup;
+			children = (
+				3A24DB062C5240D200AE52B9 /* Preview Content */,
+				3A24DAFF2C52390900AE52B9 /* SuperStorage-Mike-Info.plist */,
+				3A24DAED2C5231EB00AE52B9 /* Model */,
+				3A24DAEC2C5231B900AE52B9 /* Views */,
+				3A24DAE92C5230D900AE52B9 /* Assets */,
+				3AB36B152C522ECC00DB3CFF /* SuperStorage_MikeApp.swift */,
+				3AB36B172C522ECC00DB3CFF /* ContentView.swift */,
+				3A24DAEA2C5230FA00AE52B9 /* ListView.swift */,
+				3A24DAF02C52327300AE52B9 /* DownloadView.swift */,
+			);
+			path = SuperStorage_Mike;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		3AB36B112C522ECC00DB3CFF /* SuperStorage_Mike */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3AB36B202C522ECD00DB3CFF /* Build configuration list for PBXNativeTarget "SuperStorage_Mike" */;
+			buildPhases = (
+				3AB36B0E2C522ECC00DB3CFF /* Sources */,
+				3AB36B0F2C522ECC00DB3CFF /* Frameworks */,
+				3AB36B102C522ECC00DB3CFF /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SuperStorage_Mike;
+			productName = SuperStorage_Mike;
+			productReference = 3AB36B122C522ECC00DB3CFF /* SuperStorage_Mike.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		3AB36B0A2C522ECC00DB3CFF /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1530;
+				LastUpgradeCheck = 1530;
+				TargetAttributes = {
+					3AB36B112C522ECC00DB3CFF = {
+						CreatedOnToolsVersion = 15.3;
+					};
+				};
+			};
+			buildConfigurationList = 3AB36B0D2C522ECC00DB3CFF /* Build configuration list for PBXProject "SuperStorage_Mike" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 3AB36B092C522ECC00DB3CFF;
+			productRefGroup = 3AB36B132C522ECC00DB3CFF /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				3AB36B112C522ECC00DB3CFF /* SuperStorage_Mike */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		3AB36B102C522ECC00DB3CFF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3A24DAFC2C5237EF00AE52B9 /* SerreriaSobria.otf in Resources */,
+				3A24DAFB2C5237EF00AE52B9 /* LICENSE in Resources */,
+				3AB36B1A2C522ECD00DB3CFF /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		3AB36B0E2C522ECC00DB3CFF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3AB36B182C522ECC00DB3CFF /* ContentView.swift in Sources */,
+				3A24DB012C523B2800AE52B9 /* Downloads.swift in Sources */,
+				3A24DB032C523BA900AE52B9 /* FilePreview.swift in Sources */,
+				3AB36B162C522ECC00DB3CFF /* SuperStorage_MikeApp.swift in Sources */,
+				3A24DAEB2C5230FA00AE52B9 /* ListView.swift in Sources */,
+				3A24DAF52C52343C00AE52B9 /* FileDetails.swift in Sources */,
+				3A24DAF72C52366700AE52B9 /* Utility.swift in Sources */,
+				3A24DAF32C52330100AE52B9 /* DataModels.swift in Sources */,
+				3A24DB052C523E0F00AE52B9 /* FileListItem.swift in Sources */,
+				3A24DAEF2C52323F00AE52B9 /* SuperStorageModel.swift in Sources */,
+				3A24DAF12C52327300AE52B9 /* DownloadView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		3AB36B1E2C522ECD00DB3CFF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.4;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		3AB36B1F2C522ECD00DB3CFF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.4;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		3AB36B212C522ECD00DB3CFF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"SuperStorage_Mike/Preview Content\"";
+				DEVELOPMENT_TEAM = 63B33THBR2;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "SuperStorage-Mike-Info.plist";
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "Ming.SuperStorage-Mike";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		3AB36B222C522ECD00DB3CFF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"SuperStorage_Mike/Preview Content\"";
+				DEVELOPMENT_TEAM = 63B33THBR2;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "SuperStorage-Mike-Info.plist";
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "Ming.SuperStorage-Mike";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		3AB36B0D2C522ECC00DB3CFF /* Build configuration list for PBXProject "SuperStorage_Mike" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3AB36B1E2C522ECD00DB3CFF /* Debug */,
+				3AB36B1F2C522ECD00DB3CFF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3AB36B202C522ECD00DB3CFF /* Build configuration list for PBXNativeTarget "SuperStorage_Mike" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3AB36B212C522ECD00DB3CFF /* Debug */,
+				3AB36B222C522ECD00DB3CFF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 3AB36B0A2C522ECC00DB3CFF /* Project object */;
+}
