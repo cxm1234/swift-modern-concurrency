@@ -12,7 +12,7 @@ struct DownloadView: View {
     @EnvironmentObject var model: SuperStorageModel
     @State var fileData: Data?
     @State var isDownloadActive = false
-    @State var downloads: [DownloadInfo] = []
+    @State var downloadTask: Task<Void, Error>?
     var body: some View {
         List {
             FileDetails(
@@ -32,7 +32,7 @@ struct DownloadView: View {
                 } downloadWithUpdatesAction: {
                     // Download a file with UI progress updates.
                     isDownloadActive = true
-                    Task {
+                    downloadTask = Task {
                         do {
                             try await SuperStorageModel
                                 .$supportsPartialDownloads
@@ -46,7 +46,7 @@ struct DownloadView: View {
                     // Download a file in multiple concurrent parts.
                 }
             if !model.downloads.isEmpty {
-                Downloads(downloads: downloads)
+                Downloads(downloads: model.downloads)
             }
             if let fileData = fileData {
                 FilePreview(fileData: fileData)
@@ -55,17 +55,17 @@ struct DownloadView: View {
         .animation(.easeOut(duration: 0.33), value: model.downloads)
         .listStyle(InsetGroupedListStyle())
         .toolbar(content: {
-            Button(action: {}, label: {
+            Button(action: {
+                model.stopDownloads = true 
+            }, label: {
                 Text("Cancel All")
             })
-            .disabled(downloads.isEmpty)
+            .disabled(model.downloads.isEmpty)
         })
         .onDisappear(perform: {
             fileData = nil
             model.reset()
+            downloadTask?.cancel()
         })
-        .onChange(of: model.downloads) { oldValue, newValue in
-            downloads = newValue
-        }
     }
 }

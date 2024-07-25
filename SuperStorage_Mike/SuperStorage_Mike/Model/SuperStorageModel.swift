@@ -52,7 +52,7 @@ class SuperStorageModel: ObservableObject {
         var asyncDownloadIterator = result.downloadStream.makeAsyncIterator()
         var accumulator = ByteAccumulator(name: name, size: size)
         while await !stopDownloads, !accumulator.checkCompleted() {
-            while !accumulator.isBatchCompleted, 
+            while !accumulator.isBatchCompleted,
                     let byte = try await asyncDownloadIterator.next() {
                 accumulator.append(byte)
             }
@@ -63,7 +63,9 @@ class SuperStorageModel: ObservableObject {
             }
             print(accumulator.description)
         }
-        
+        if await stopDownloads, !Self.supportsPartialDownloads {
+            throw CancellationError()
+        }
         return accumulator.data
     }
     
