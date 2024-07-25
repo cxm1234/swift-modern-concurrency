@@ -18,6 +18,7 @@
 		3A24DB012C523B2800AE52B9 /* Downloads.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A24DB002C523B2800AE52B9 /* Downloads.swift */; };
 		3A24DB032C523BA900AE52B9 /* FilePreview.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A24DB022C523BA900AE52B9 /* FilePreview.swift */; };
 		3A24DB052C523E0F00AE52B9 /* FileListItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A24DB042C523E0F00AE52B9 /* FileListItem.swift */; };
+		3A24DB082C525B0D00AE52B9 /* ByteAccumulator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A24DB072C525B0D00AE52B9 /* ByteAccumulator.swift */; };
 		3AB36B162C522ECC00DB3CFF /* SuperStorage_MikeApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AB36B152C522ECC00DB3CFF /* SuperStorage_MikeApp.swift */; };
 		3AB36B182C522ECC00DB3CFF /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AB36B172C522ECC00DB3CFF /* ContentView.swift */; };
 		3AB36B1A2C522ECD00DB3CFF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3AB36B192C522ECD00DB3CFF /* Assets.xcassets */; };
@@ -36,6 +37,7 @@
 		3A24DB002C523B2800AE52B9 /* Downloads.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Downloads.swift; sourceTree = "<group>"; };
 		3A24DB022C523BA900AE52B9 /* FilePreview.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilePreview.swift; sourceTree = "<group>"; };
 		3A24DB042C523E0F00AE52B9 /* FileListItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FileListItem.swift; sourceTree = "<group>"; };
+		3A24DB072C525B0D00AE52B9 /* ByteAccumulator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ByteAccumulator.swift; sourceTree = "<group>"; };
 		3AB36B122C522ECC00DB3CFF /* SuperStorage_Mike.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SuperStorage_Mike.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3AB36B152C522ECC00DB3CFF /* SuperStorage_MikeApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SuperStorage_MikeApp.swift; sourceTree = "<group>"; };
 		3AB36B172C522ECC00DB3CFF /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -79,6 +81,7 @@
 				3A24DAEE2C52323F00AE52B9 /* SuperStorageModel.swift */,
 				3A24DAF22C52330100AE52B9 /* DataModels.swift */,
 				3A24DAF62C52366700AE52B9 /* Utility.swift */,
+				3A24DB072C525B0D00AE52B9 /* ByteAccumulator.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -210,6 +213,7 @@
 				3A24DAF52C52343C00AE52B9 /* FileDetails.swift in Sources */,
 				3A24DAF72C52366700AE52B9 /* Utility.swift in Sources */,
 				3A24DAF32C52330100AE52B9 /* DataModels.swift in Sources */,
+				3A24DB082C525B0D00AE52B9 /* ByteAccumulator.swift in Sources */,
 				3A24DB052C523E0F00AE52B9 /* FileListItem.swift in Sources */,
 				3A24DAEF2C52323F00AE52B9 /* SuperStorageModel.swift in Sources */,
 				3A24DAF12C52327300AE52B9 /* DownloadView.swift in Sources */,

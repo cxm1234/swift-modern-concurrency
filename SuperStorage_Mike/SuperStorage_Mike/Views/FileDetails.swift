@@ -36,12 +36,12 @@ struct FileDetails: View {
                             Text("Silver")
                         }
                         .tint(Color.teal)
-                        Button(action: downloadSingleAction) {
+                        Button(action: downloadWithUpdatesAction) {
                             Image(systemName: "arrow.down.app.fill")
                             Text("Gold")
                         }
                         .tint(Color.pink)
-                        Button(action: downloadSingleAction) {
+                        Button(action: downloadWithMultipleAction) {
                             Image(systemName: "dial.max.fill")
                             Text("Cloud 9")
                         }

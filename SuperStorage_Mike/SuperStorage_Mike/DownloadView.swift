@@ -12,6 +12,7 @@ struct DownloadView: View {
     @EnvironmentObject var model: SuperStorageModel
     @State var fileData: Data?
     @State var isDownloadActive = false
+    @State var downloads: [DownloadInfo] = []
     var body: some View {
         List {
             FileDetails(
@@ -30,12 +31,22 @@ struct DownloadView: View {
                     }
                 } downloadWithUpdatesAction: {
                     // Download a file with UI progress updates.
-                    
+                    isDownloadActive = true
+                    Task {
+                        do {
+                            try await SuperStorageModel
+                                .$supportsPartialDownloads
+                                .withValue(file.name.hasSuffix(".jpeg")) {
+                                    fileData = try await model.downloadWithProgress(file: file)
+                                }
+                        } catch {}
+                        isDownloadActive = false 
+                    }
                 } downloadWithMultipleAction: {
                     // Download a file in multiple concurrent parts.
                 }
             if !model.downloads.isEmpty {
-                Downloads(downloads: model.downloads)
+                Downloads(downloads: downloads)
             }
             if let fileData = fileData {
                 FilePreview(fileData: fileData)
@@ -47,11 +58,14 @@ struct DownloadView: View {
             Button(action: {}, label: {
                 Text("Cancel All")
             })
-            .disabled(model.downloads.isEmpty)
+            .disabled(downloads.isEmpty)
         })
         .onDisappear(perform: {
             fileData = nil
             model.reset()
         })
+        .onChange(of: model.downloads) { oldValue, newValue in
+            downloads = newValue
+        }
     }
 }
