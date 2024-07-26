@@ -6,13 +6,41 @@
 //
 
 import SwiftUI
+import Combine
 
 struct DownloadView: View {
     let file: DownloadFile
     @EnvironmentObject var model: SuperStorageModel
     @State var fileData: Data?
-    @State var isDownloadActive = false
-    @State var downloadTask: Task<Void, Error>?
+    @State var isDownloadActive = false {
+        didSet {
+            if !isDownloadActive {
+                timerTask?.cancel()
+            }
+        }
+    }
+    @State var duration = ""
+    @State var downloadTask: Task<Void, Error>? {
+        didSet {
+            timerTask?.cancel()
+            guard isDownloadActive else { return }
+            let startTime = Date().timeIntervalSince1970
+            let timerSequence = Timer
+                .publish(every: 1, on: .main, in: .common)
+                .autoconnect()
+                .map { date -> String in
+                    let duration = Int(date.timeIntervalSince1970 - startTime)
+                    return "\(duration)s"
+                }
+                .values
+            timerTask = Task {
+                for await duration in timerSequence {
+                    self.duration = duration
+                }
+            }
+        }
+    }
+    @State var timerTask: Task<Void, Error>?
     var body: some View {
         List {
             FileDetails(
@@ -44,10 +72,23 @@ struct DownloadView: View {
                     }
                 } downloadWithMultipleAction: {
                     // Download a file in multiple concurrent parts.
+                    isDownloadActive = true
+                    Task {
+                        do {
+                            fileData = try await model.multiDownloadWithProgress(file: file)
+                        } catch {}
+                        isDownloadActive = false
+                    }
                 }
             if !model.downloads.isEmpty {
                 Downloads(downloads: model.downloads)
             }
+            
+            if !duration.isEmpty {
+                Text("Duration: \(duration)")
+                    .font(.caption)
+            }
+            
             if let fileData = fileData {
                 FilePreview(fileData: fileData)
             }
@@ -57,6 +98,7 @@ struct DownloadView: View {
         .toolbar(content: {
             Button(action: {
                 model.stopDownloads = true 
+                timerTask?.cancel()
             }, label: {
                 Text("Cancel All")
             })
