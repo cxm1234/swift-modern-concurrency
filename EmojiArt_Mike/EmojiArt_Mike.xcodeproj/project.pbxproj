@@ -39,6 +39,7 @@
 		3A5C99A12C59C50A00560894 /* BottomToolbar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BottomToolbar.swift; sourceTree = "<group>"; };
 		3A5C99A32C59CAE900560894 /* LoadingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingView.swift; sourceTree = "<group>"; };
 		3A5C99A52C59CDEF00560894 /* Checksum.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Checksum.swift; sourceTree = "<group>"; };
+		3A5C99A72C5A093F00560894 /* EmojiArt-Mike-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "EmojiArt-Mike-Info.plist"; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -71,6 +72,7 @@
 		3A5C997D2C59B6B600560894 /* EmojiArt_Mike */ = {
 			isa = PBXGroup;
 			children = (
+				3A5C99A72C5A093F00560894 /* EmojiArt-Mike-Info.plist */,
 				3A5C998F2C59B84700560894 /* Assets */,
 				3A5C998E2C59B83E00560894 /* Views */,
 				3A5C998D2C59B83600560894 /* Model */,
@@ -355,6 +357,7 @@
 				DEVELOPMENT_TEAM = 63B33THBR2;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "EmojiArt-Mike-Info.plist";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -384,6 +387,7 @@
 				DEVELOPMENT_TEAM = 63B33THBR2;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "EmojiArt-Mike-Info.plist";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;

@@ -9,6 +9,19 @@ import Foundation
 
 class EmojiArtModel: ObservableObject {
     @Published private(set) var imageFeed: [ImageFile] = []
+    private(set) var verifiedCount = 0
+    
+    func verifyImages() async throws {
+        try await withThrowingTaskGroup(of: Void.self) { group in
+            imageFeed.forEach { file in
+                group.addTask { [unowned self] in
+                    try await Checksum.verify(file.checksum)
+                    self.verifiedCount += 1
+                }
+            }
+            try await group.waitForAll()
+        }
+    }
     
     func loadImages() async throws {
         imageFeed.removeAll()
