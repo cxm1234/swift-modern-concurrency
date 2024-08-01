@@ -26,5 +26,12 @@ struct ThumbImage: View {
                     Image(systemName: overlay)
                 }
             }
+            .task {
+                guard let image = try? await ImageDatabase.shared.image(file.url) else {
+                    overlay = "camera.metering.unknown"
+                    return
+                }
+                updateImage(image)
+            }
     }
 }

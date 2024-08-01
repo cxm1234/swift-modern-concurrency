@@ -16,6 +16,7 @@ struct EmojiArt_MikeApp: App {
             VStack {
                 if isVerified {
                     ListView()
+                        .environmentObject(ImageLoader())
                 } else {
                     LoadingView(isVerified: $isVerified)
                 }

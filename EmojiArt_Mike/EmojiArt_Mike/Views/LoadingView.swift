@@ -40,6 +40,7 @@ struct LoadingView: View {
             guard model.imageFeed.isEmpty else { return }
             Task {
                 do {
+                    try await ImageDatabase.shared.setUp()
                     try await model.loadImages()
                     try await model.verifyImages()
                     withAnimation {
@@ -57,7 +58,9 @@ struct LoadingView: View {
         }
         .onReceive(timer) { _ in
             guard !model.imageFeed.isEmpty else { return }
-            progress = Double(model.verifiedCount) / Double(model.imageFeed.count)
+            Task {
+                progress = await Double(model.verifiedCount) / Double(model.imageFeed.count)
+            }
         }
     }
 }

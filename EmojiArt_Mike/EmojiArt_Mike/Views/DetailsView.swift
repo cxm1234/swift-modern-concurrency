@@ -37,6 +37,9 @@ struct DetailsView: View {
         }
         .ignoresSafeArea()
         .foregroundColor(.white)
+        .task {
+            image = try? await ImageDatabase.shared.image(file.url)
+        }
     }
 }
 

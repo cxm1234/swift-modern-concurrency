@@ -21,6 +21,9 @@
 		3A5C99A22C59C50A00560894 /* BottomToolbar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A5C99A12C59C50A00560894 /* BottomToolbar.swift */; };
 		3A5C99A42C59CAE900560894 /* LoadingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A5C99A32C59CAE900560894 /* LoadingView.swift */; };
 		3A5C99A62C59CDEF00560894 /* Checksum.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A5C99A52C59CDEF00560894 /* Checksum.swift */; };
+		3A5C99A92C5A511100560894 /* ImageLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A5C99A82C5A511100560894 /* ImageLoader.swift */; };
+		3A8BF8842C5B26700020E198 /* ImageDatabase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A8BF8832C5B26700020E198 /* ImageDatabase.swift */; };
+		3A8BF8872C5B29B60020E198 /* DiskStorage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A8BF8862C5B29B60020E198 /* DiskStorage.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -40,6 +43,9 @@
 		3A5C99A32C59CAE900560894 /* LoadingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingView.swift; sourceTree = "<group>"; };
 		3A5C99A52C59CDEF00560894 /* Checksum.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Checksum.swift; sourceTree = "<group>"; };
 		3A5C99A72C5A093F00560894 /* EmojiArt-Mike-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "EmojiArt-Mike-Info.plist"; sourceTree = SOURCE_ROOT; };
+		3A5C99A82C5A511100560894 /* ImageLoader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageLoader.swift; sourceTree = "<group>"; };
+		3A8BF8832C5B26700020E198 /* ImageDatabase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageDatabase.swift; sourceTree = "<group>"; };
+		3A8BF8862C5B29B60020E198 /* DiskStorage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiskStorage.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -95,6 +101,7 @@
 		3A5C998C2C59B82C00560894 /* Database */ = {
 			isa = PBXGroup;
 			children = (
+				3A8BF8862C5B29B60020E198 /* DiskStorage.swift */,
 			);
 			path = Database;
 			sourceTree = "<group>";
@@ -106,6 +113,8 @@
 				3A5C99992C59BA4A00560894 /* DataModels.swift */,
 				3A5C999B2C59BD6400560894 /* Utility.swift */,
 				3A5C99A52C59CDEF00560894 /* Checksum.swift */,
+				3A5C99A82C5A511100560894 /* ImageLoader.swift */,
+				3A8BF8832C5B26700020E198 /* ImageDatabase.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -213,9 +222,12 @@
 			files = (
 				3A5C99932C59B93400560894 /* ListView.swift in Sources */,
 				3A5C999E2C59C14E00560894 /* ThumbImage.swift in Sources */,
+				3A8BF8842C5B26700020E198 /* ImageDatabase.swift in Sources */,
 				3A5C999C2C59BD6400560894 /* Utility.swift in Sources */,
 				3A5C99A22C59C50A00560894 /* BottomToolbar.swift in Sources */,
+				3A8BF8872C5B29B60020E198 /* DiskStorage.swift in Sources */,
 				3A5C999A2C59BA4A00560894 /* DataModels.swift in Sources */,
+				3A5C99A92C5A511100560894 /* ImageLoader.swift in Sources */,
 				3A5C99A02C59C39E00560894 /* DetailsView.swift in Sources */,
 				3A5C99A62C59CDEF00560894 /* Checksum.swift in Sources */,
 				3A5C997F2C59B6B600560894 /* EmojiArt_MikeApp.swift in Sources */,
